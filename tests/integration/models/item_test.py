@@ -4,10 +4,10 @@ This file will contain integration tests
 
 from models.item import ItemModel
 from models.store import StoreModel
-from tests.integration.base_test_integration import BaseTestIntegration
+from tests.base_test import BaseTest
 
 
-class ItemTest(BaseTestIntegration):
+class ItemTest(BaseTest):
     def test_crud(self):
         with self.app_context():
             StoreModel('test').save_to_db()  # only needed if connecting to 'sqlite:///data.db'

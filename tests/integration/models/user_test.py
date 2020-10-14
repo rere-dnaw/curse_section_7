@@ -1,8 +1,8 @@
-from tests.integration.base_test_integration import BaseTestIntegration
+from tests.base_test import BaseTest
 from models.user import UserModel
 
 
-class TestUserModel(BaseTestIntegration):
+class TestUserModel(BaseTest):
     """
     This class will contain the integration tests for
     UserModel class
