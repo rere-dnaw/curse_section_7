@@ -1,9 +1,9 @@
-from tests.integration.base_test_integration import BaseTestIntegration
+from tests.base_test import BaseTest
 from models.store import StoreModel
 from models.item import ItemModel
 
 
-class TestStoreModel(BaseTestIntegration):
+class TestStoreModel(BaseTest):
     """
     This class will contain integration tests for class "StoreModel"
     """

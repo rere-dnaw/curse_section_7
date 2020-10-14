@@ -7,6 +7,7 @@ from unittest import TestCase
 from models.item import ItemModel
 # this is needed for SQLalchemy for creating a store object
 from models.store import StoreModel
+from models.user import UserModel
 
 
 class BaseTestUnit(TestCase):
@@ -19,3 +20,4 @@ class BaseTestUnit(TestCase):
         """
         self.item1 = ItemModel('Head', 1000.99, 1)
         self.store1 = StoreModel('test_store_1')
+        self.user1 = UserModel('Ben', 'big')
